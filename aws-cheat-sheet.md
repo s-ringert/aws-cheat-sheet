@@ -36,6 +36,7 @@
       - [Global Accelerator](#global-accelerator)
       - [Direct Connect \& VPN](#direct-connect--vpn)
       - [AWS Transit Gateway](#aws-transit-gateway)
+      - [Amazon API Gateway](#amazon-api-gateway)
     - [🔒 Security \& Compliance](#-security--compliance)
       - [AWS Config](#aws-config)
       - [CloudTrail](#cloudtrail)
@@ -49,6 +50,7 @@
       - [AWS WAF (Web Application Firewall)](#aws-waf-web-application-firewall)
       - [Secrets Manager](#secrets-manager)
       - [KMS (Key Management Service)](#kms-key-management-service)
+      - [AWS Artifact](#aws-artifact)
     - [🧰 Developer Tools](#-developer-tools)
       - [CodeCommit](#codecommit)
       - [CodeBuild](#codebuild)
@@ -56,6 +58,7 @@
       - [CodePipeline](#codepipeline)
       - [CodeArtifact](#codeartifact)
       - [AWS Cloud9](#aws-cloud9)
+      - [AWS X-Ray](#aws-x-ray)
     - [📊 Analytics \& Big Data](#-analytics--big-data)
       - [Kinesis](#kinesis)
       - [Glue](#glue)
@@ -73,8 +76,18 @@
     - [🧠 AI/ML](#-aiml)
       - [Amazon Rekognition](#amazon-rekognition)
       - [Amazon SageMaker](#amazon-sagemaker)
+      - [Amazon Comprehend](#amazon-comprehend)
+      - [Amazon Polly](#amazon-polly)
+      - [Amazon Translate](#amazon-translate)
     - [🧩 App Integration](#-app-integration)
       - [Amazon MQ](#amazon-mq)
+    - [🚚 Migration \& Transfer](#-migration--transfer)
+      - [AWS Database Migration Service (DMS)](#aws-database-migration-service-dms)
+      - [AWS Server Migration Service (SMS)](#aws-server-migration-service-sms)
+      - [AWS DataSync](#aws-datasync)
+    - [🌐 Edge \& IoT](#-edge--iot)
+      - [AWS IoT Core](#aws-iot-core)
+      - [AWS Greengrass](#aws-greengrass)
   - [Support Pläne](#support-pläne)
     - [🟢 1. Basic Support](#-1-basic-support)
     - [🔵 2. Developer Support](#-2-developer-support)
@@ -265,6 +278,10 @@ Private or encrypted connections to AWS.
 Connects multiple VPCs and on-premises networks.
 > Acts as a central hub for inter-VPC and hybrid network routing. Scales better than VPC Peering for large organizations.
 
+#### Amazon API Gateway
+Fully managed service to create, publish, and manage APIs.
+> Amazon API Gateway allows developers to create, secure, and manage RESTful and WebSocket APIs at any scale. It acts as a “front door” for applications to access backend services like Lambda functions, EC2 instances, or other web services. It handles tasks such as traffic management, authorization and access control, monitoring, and API version management, enabling developers to build scalable and secure APIs without managing infrastructure.
+
 ### 🔒 Security & Compliance
 
 #### AWS Config
@@ -327,6 +344,10 @@ Manages secrets like passwords and API keys.
 Manages encryption keys.
 > KMS lets you create, manage, and audit encryption keys for AWS and app data. Integrated with S3, EBS, RDS, and more.
 
+#### AWS Artifact
+Access compliance reports and agreements.
+> AWS Artifact provides on-demand access to AWS security and compliance documents such as SOC reports, PCI attestations, and ISO certifications. It supports customers in meeting compliance and audit requirements.
+
 ### 🧰 Developer Tools
 
 #### CodeCommit
@@ -358,6 +379,10 @@ Package manager for dependencies.
 Cloud-based Integrated Development Environment (IDE).
 
 > Cloud9 is an online IDE that lets developers write, run, and debug code directly in a browser. It provides a pre-configured environment with built-in terminal access to AWS resources, making it easy to develop serverless apps, Lambda functions, or other cloud applications without any local setup.
+
+#### AWS X-Ray
+Distributed tracing and analysis.
+> AWS X-Ray helps developers analyze and debug distributed applications, such as those built using microservices or serverless architectures. It provides insights into request flows, latencies, and errors by tracing requests as they travel through services.
 
 ### 📊 Analytics & Big Data
 
@@ -432,12 +457,48 @@ Image and video analysis.
 Build, train, and deploy ML models.
 > End-to-end ML service that supports data prep, model training, deployment, and monitoring.
 
+#### Amazon Comprehend
+> Natural language processing service.
+> Amazon Comprehend uses machine learning to extract insights from text, including sentiment analysis, entity recognition, key phrase extraction, and language detection.
+
+#### Amazon Polly
+> Text-to-speech service.
+> Amazon Polly converts text into lifelike speech, enabling developers to build applications that talk, such as interactive voice response (IVR) systems and accessibility tools.
+
+#### Amazon Translate
+> Neural machine translation.
+> Amazon Translate provides fast, high-quality language translation for applications, websites, and content, supporting many popular languages and dialects.
+
+
 ### 🧩 App Integration
 
 #### Amazon MQ
 
 Managed message broker (ActiveMQ, RabbitMQ).
 > Used for migrating legacy message-based apps that use traditional protocols like AMQP or STOMP.
+
+
+### 🚚 Migration & Transfer
+#### AWS Database Migration Service (DMS)
+Migrate databases with minimal downtime.
+> > AWS DMS enables easy and secure migration of databases to AWS, supporting homogeneous and heterogeneous migrations. It continuously replicates data to minimize downtime during migration.
+
+#### AWS Server Migration Service (SMS)
+Automate server migrations to AWS.
+> AWS SMS simplifies and automates the migration of on-premises virtual machines and servers to AWS by replicating live server volumes, allowing incremental syncs and orchestrated migrations.
+
+#### AWS DataSync
+Fast, online data transfer service.
+> AWS DataSync accelerates and automates data transfer between on-premises storage and AWS services such as S3 or EFS. It handles data validation, encryption, and can transfer large datasets efficiently.
+
+### 🌐 Edge & IoT
+#### AWS IoT Core
+> Managed service for IoT device connectivity.
+> AWS IoT Core allows you to securely connect, manage, and ingest data from billions of IoT devices. It supports device communication protocols and integrates with other AWS services for data processing and analytics.
+
+#### AWS Greengrass
+> IoT edge computing software.
+> AWS Greengrass extends AWS functionality to edge devices so they can collect and analyze data locally, respond quickly to local events, and operate offline while syncing with the cloud when connected.
 
 ---
 
