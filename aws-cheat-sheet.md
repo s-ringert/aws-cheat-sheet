@@ -11,6 +11,7 @@
       - [Fargate](#fargate)
       - [Elastic Beanstalk](#elastic-beanstalk)
       - [Lightsail](#lightsail)
+      - [Amazon ECS (Elastic Container Service)](#amazon-ecs-elastic-container-service)
     - [📦 Storage](#-storage)
       - [S3](#s3)
       - [EBS](#ebs)
@@ -54,6 +55,7 @@
       - [CodeDeploy](#codedeploy)
       - [CodePipeline](#codepipeline)
       - [CodeArtifact](#codeartifact)
+      - [AWS Cloud9](#aws-cloud9)
     - [📊 Analytics \& Big Data](#-analytics--big-data)
       - [Kinesis](#kinesis)
       - [Glue](#glue)
@@ -67,6 +69,7 @@
     - [🧰 Management \& Governance](#-management--governance)
       - [AWS Cost Explorer](#aws-cost-explorer)
       - [AWS Budgets](#aws-budgets)
+      - [AWS CloudFormation](#aws-cloudformation)
     - [🧠 AI/ML](#-aiml)
       - [Amazon Rekognition](#amazon-rekognition)
       - [Amazon SageMaker](#amazon-sagemaker)
@@ -143,6 +146,13 @@ Platform-as-a-Service for web apps.
 
 Easy-to-use virtual private servers.
 > Lightsail is designed for developers who need a simple VPS solution. It bundles compute, storage, and networking at a fixed monthly price. Ideal for basic websites, blogs, and dev/test environments.
+
+#### Amazon ECS (Elastic Container Service)
+Managed container orchestration service.
+
+> Amazon ECS is a highly scalable, high-performance container orchestration service that supports Docker containers. It allows you to easily run, stop, and manage containers on a cluster of EC2 instances or with Fargate (serverless containers). ECS integrates with other AWS services like IAM, CloudWatch, and ELB for security, monitoring, and load balancing.
+
+
 
 ### 📦 Storage
 
@@ -344,6 +354,11 @@ CI/CD orchestration tool.
 Package manager for dependencies.
 > CodeArtifact stores and shares software packages across teams. It supports npm, Maven, PyPI, and more. Helps centralize package management with fine-grained access control.
 
+#### AWS Cloud9
+Cloud-based Integrated Development Environment (IDE).
+
+> Cloud9 is an online IDE that lets developers write, run, and debug code directly in a browser. It provides a pre-configured environment with built-in terminal access to AWS resources, making it easy to develop serverless apps, Lambda functions, or other cloud applications without any local setup.
+
 ### 📊 Analytics & Big Data
 
 #### Kinesis
@@ -399,6 +414,11 @@ Visualize and analyze AWS costs.
 
 Set custom cost and usage alerts.
 > Budgets notify you when your usage or costs exceed a threshold. Can trigger automation via SNS.
+
+#### AWS CloudFormation
+Infrastructure as Code (IaC) service to provision AWS resources.
+
+>CloudFormation enables you to define and deploy AWS infrastructure using templates written in JSON or YAML. This allows automated, repeatable, and consistent provisioning of resources such as EC2 instances, VPCs, databases, and more. It’s key for managing infrastructure in a DevOps or IaC environment and supports stack updates, rollbacks, and dependency management.
 
 ### 🧠 AI/ML
 
@@ -590,14 +610,14 @@ Convertible RIs allow some changes but Compute Savings Plans offer greater flexi
 
 ### Summary Table
 
-| Storage Class                 | Access Frequency        | Availability     | Durability   | Cost          | Retrieval Time          | Use Case                          |
-|------------------------------|------------------------|------------------|--------------|---------------|------------------------|----------------------------------|
-| S3 Standard                  | Frequent               | 99.99%           | 11 nines     | High          | Milliseconds           | Active data, websites             |
-| S3 Intelligent-Tiering       | Variable               | 99.9%+           | 11 nines     | Medium        | Milliseconds           | Unknown access patterns           |
-| S3 Standard-IA               | Infrequent             | 99.9%            | 11 nines     | Lower         | Milliseconds + retrieval fees | Backups, DR                   |
-| S3 One Zone-IA               | Infrequent             | 99.5% (1 AZ)     | 11 nines     | Lowest        | Milliseconds + retrieval fees | Secondary backups, cost-sensitive |
-| S3 Glacier Instant Retrieval | Rare                   | 99.99%           | 11 nines     | Low           | Milliseconds           | Long-term archive with fast access |
-| S3 Glacier Flexible Retrieval| Rare                   | 99.99%           | 11 nines     | Very Low      | Minutes to hours       | Compliance archives              |
-| S3 Glacier Deep Archive      | Very Rare              | 99.99%           | 11 nines     | Cheapest      | Up to 12 hours or more | Long-term legal/regulatory archive|
+| Storage Class                 | Access Frequency | Availability | Durability | Cost     | Retrieval Time                | Use Case                           |
+| ----------------------------- | ---------------- | ------------ | ---------- | -------- | ----------------------------- | ---------------------------------- |
+| S3 Standard                   | Frequent         | 99.99%       | 11 nines   | High     | Milliseconds                  | Active data, websites              |
+| S3 Intelligent-Tiering        | Variable         | 99.9%+       | 11 nines   | Medium   | Milliseconds                  | Unknown access patterns            |
+| S3 Standard-IA                | Infrequent       | 99.9%        | 11 nines   | Lower    | Milliseconds + retrieval fees | Backups, DR                        |
+| S3 One Zone-IA                | Infrequent       | 99.5% (1 AZ) | 11 nines   | Lowest   | Milliseconds + retrieval fees | Secondary backups, cost-sensitive  |
+| S3 Glacier Instant Retrieval  | Rare             | 99.99%       | 11 nines   | Low      | Milliseconds                  | Long-term archive with fast access |
+| S3 Glacier Flexible Retrieval | Rare             | 99.99%       | 11 nines   | Very Low | Minutes to hours              | Compliance archives                |
+| S3 Glacier Deep Archive       | Very Rare        | 99.99%       | 11 nines   | Cheapest | Up to 12 hours or more        | Long-term legal/regulatory archive |
 
 ---
