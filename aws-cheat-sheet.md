@@ -18,7 +18,7 @@
       - [AWS Snowball](#aws-snowball)
       - [CloudEndure](#cloudendure)
       - [AWS Backup](#aws-backup)
-      - [🛢️ Database](#️-database)
+    - [🛢️ Database](#️-database)
       - [RDS](#rds)
       - [Aurora](#aurora)
       - [DynamoDB](#dynamodb)
@@ -176,7 +176,7 @@ Disaster recovery service.
 Centralized backup service.
 > Manages and automates backups across AWS services like EFS, RDS, DynamoDB, and EBS. Ensures compliance and centralized backup policy enforcement.
 
-#### 🛢️ Database
+### 🛢️ Database
 
 #### RDS
 
