@@ -51,6 +51,7 @@
       - [Secrets Manager](#secrets-manager)
       - [KMS (Key Management Service)](#kms-key-management-service)
       - [AWS Artifact](#aws-artifact)
+      - [AWS Systems Manager Parameter Store](#aws-systems-manager-parameter-store)
     - [🧰 Developer Tools](#-developer-tools)
       - [CodeCommit](#codecommit)
       - [CodeBuild](#codebuild)
@@ -347,6 +348,10 @@ Manages encryption keys.
 #### AWS Artifact
 Access compliance reports and agreements.
 > AWS Artifact provides on-demand access to AWS security and compliance documents such as SOC reports, PCI attestations, and ISO certifications. It supports customers in meeting compliance and audit requirements.
+
+#### AWS Systems Manager Parameter Store
+Secure storage for configuration data and secrets.
+> Parameter Store is a feature of AWS Systems Manager that provides secure, hierarchical storage for configuration values, passwords, license keys, and other secret or plain-text data. It supports versioning, encryption with AWS KMS, access control via IAM, and integration with services like Lambda and EC2. It's often used in CI/CD pipelines and for decoupling application configuration from code.
 
 ### 🧰 Developer Tools
 
