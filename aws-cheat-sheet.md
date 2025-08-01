@@ -53,7 +53,6 @@
       - [Amazon Elastic Container Registry (Amazon ECR)](#amazon-elastic-container-registry-amazon-ecr)
       - [Amazon Elastic Container Service (Amazon ECS)](#amazon-elastic-container-service-amazon-ecs)
       - [Amazon Elastic Kubernetes Service (Amazon EKS)](#amazon-elastic-kubernetes-service-amazon-eks)
-    - [🛢️ Database](#️-database)
       - [Amazon Aurora](#amazon-aurora)
       - [Amazon Aurora Serverless](#amazon-aurora-serverless)
       - [Amazon DocumentDB (with MongoDB compatibility)](#amazon-documentdb-with-mongodb-compatibility)
@@ -277,8 +276,6 @@ Generative AI assistant for AWS and enterprise tasks.
 
 > Amazon Q is a generative AI-powered assistant designed to help users build, operate, and troubleshoot AWS applications more efficiently. It integrates with the AWS Console, IDEs (like VS Code), and documentation, enabling developers and IT teams to ask natural-language questions about AWS resources, code, or cloud operations. It also supports enterprise integrations to help employees query internal data securely using natural language.
 
---------------------------------------------------------------------------------
-
 ### 📊 Analytics & Big Data
 
 #### Kinesis
@@ -453,8 +450,6 @@ Simplified cloud platform for small apps and projects.
 
 > Amazon Lightsail is an easy-to-use cloud platform that provides virtual servers (instances), managed databases, storage, networking, and more -- all bundled with predictable pricing. It's ideal for small businesses, quick prototypes, WordPress sites, or developers new to AWS who want a simplified experience without deep AWS service integration.
 
---------------------------------------------------------------------------------
-
 ### 🐋 Container
 
 #### Amazon ECS Anywhere
@@ -493,9 +488,7 @@ Managed Kubernetes on AWS.
 
 > Amazon EKS is a managed service to run Kubernetes workloads in the AWS cloud or on-prem. It automates cluster provisioning, upgrades, and scalability while integrating tightly with other AWS services for networking, logging, and security.
 
---------------------------------------------------------------------------------
-
-### 🛢️ Database
+> ### 🛢️ Database
 
 #### Amazon Aurora
 
@@ -556,8 +549,6 @@ Managed relational database service.
 Fully managed cloud data warehouse.
 
 > Redshift enables fast, SQL-based querying and analytics on large datasets using columnar storage and parallel processing. It integrates with BI tools and supports data lake queries with Redshift Spectrum.
-
---------------------------------------------------------------------------------
 
 ### 🧰 Developer Tools
 
