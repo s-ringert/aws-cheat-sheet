@@ -2,87 +2,19 @@
 
 - [AWS CCP \& SAA Cheat Sheet](#aws-ccp--saa-cheat-sheet)
   - [Services](#services)
-    - [💾 Compute](#-compute)
-      - [EC2](#ec2)
-      - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
-      - [Lambda](#lambda)
-      - [Fargate](#fargate)
-      - [Elastic Beanstalk](#elastic-beanstalk)
-      - [AWS Batch](#aws-batch)
-      - [AWS Outposts](#aws-outposts)
-      - [AWS Serverless Application Repository](#aws-serverless-application-repository)
-      - [VMware Cloud on AWS](#vmware-cloud-on-aws)
-      - [AWS Wavelength](#aws-wavelength)
-    - [🐋 Container](#-container)
-      - [Amazon ECS Anywhere](#amazon-ecs-anywhere)
-      - [Amazon EKS Anywhere](#amazon-eks-anywhere)
-      - [Amazon EKS Distro](#amazon-eks-distro)
-      - [Amazon Elastic Container Registry (Amazon ECR)](#amazon-elastic-container-registry-amazon-ecr)
-      - [Amazon Elastic Container Service (Amazon ECS)](#amazon-elastic-container-service-amazon-ecs)
-      - [Amazon Elastic Kubernetes Service (Amazon EKS)](#amazon-elastic-kubernetes-service-amazon-eks)
-    - [📦 Storage \& Backup](#-storage--backup)
-      - [AWS Backup](#aws-backup)
-      - [Amazon Elastic Block Store (Amazon EBS)](#amazon-elastic-block-store-amazon-ebs)
-      - [Amazon Elastic File System (Amazon EFS)](#amazon-elastic-file-system-amazon-efs)
-      - [Amazon FSx (for Windows, Lustre, NetApp, OpenZFS)](#amazon-fsx-for-windows-lustre-netapp-openzfs)
-      - [Amazon S3](#amazon-s3)
-      - [Amazon S3 Glacier](#amazon-s3-glacier)
-      - [AWS Storage Gateway](#aws-storage-gateway)
-    - [🛢️ Database](#️-database)
-      - [Amazon Aurora](#amazon-aurora)
-      - [Amazon Aurora Serverless](#amazon-aurora-serverless)
-      - [Amazon DocumentDB (with MongoDB compatibility)](#amazon-documentdb-with-mongodb-compatibility)
-      - [Amazon DynamoDB](#amazon-dynamodb)
-      - [Amazon ElastiCache](#amazon-elasticache)
-      - [Amazon Keyspaces (for Apache Cassandra)](#amazon-keyspaces-for-apache-cassandra)
-      - [Amazon Neptune](#amazon-neptune)
-      - [Amazon Quantum Ledger Database (Amazon QLDB)](#amazon-quantum-ledger-database-amazon-qldb)
-      - [Amazon RDS](#amazon-rds)
-      - [Amazon Redshift](#amazon-redshift)
-    - [🌐 Networking \& CDN](#-networking--cdn)
-      - [AWS Client VPN](#aws-client-vpn)
-      - [Amazon CloudFront](#amazon-cloudfront)
-      - [AWS Direct Connect](#aws-direct-connect)
-      - [Elastic Load Balancing (ELB)](#elastic-load-balancing-elb)
-      - [AWS Global Accelerator](#aws-global-accelerator)
-      - [AWS PrivateLink](#aws-privatelink)
-      - [Amazon Route 53](#amazon-route-53)
-      - [AWS Site-to-Site VPN](#aws-site-to-site-vpn)
-      - [AWS Transit Gateway](#aws-transit-gateway)
-      - [Amazon VPC (Virtual Private Cloud)](#amazon-vpc-virtual-private-cloud)
-    - [🔒 Security, Identity \& Compliance](#-security-identity--compliance)
-      - [AWS Artifact](#aws-artifact)
-      - [AWS Audit Manager](#aws-audit-manager)
-      - [AWS Certificate Manager (ACM)](#aws-certificate-manager-acm)
-      - [AWS CloudHSM](#aws-cloudhsm)
-      - [Amazon Cognito](#amazon-cognito)
-      - [Amazon Detective](#amazon-detective)
-      - [AWS Directory Service](#aws-directory-service)
-      - [AWS Firewall Manager](#aws-firewall-manager)
-      - [Amazon GuardDuty](#amazon-guardduty)
-      - [AWS IAM Identity Center (formerly AWS SSO)](#aws-iam-identity-center-formerly-aws-sso)
-      - [AWS Identity and Access Management (IAM)](#aws-identity-and-access-management-iam)
-      - [Amazon Inspector](#amazon-inspector)
-      - [AWS Key Management Service (AWS KMS)](#aws-key-management-service-aws-kms)
-      - [Amazon Macie](#amazon-macie)
-      - [AWS Network Firewall](#aws-network-firewall)
-      - [AWS Resource Access Manager (AWS RAM)](#aws-resource-access-manager-aws-ram)
-      - [AWS Secrets Manager](#aws-secrets-manager)
-      - [AWS Security Hub](#aws-security-hub)
-      - [AWS Shield](#aws-shield)
-      - [AWS WAF (Web Application Firewall)](#aws-waf-web-application-firewall)
-    - [🧰 Developer Tools](#-developer-tools)
-      - [CodeCommit](#codecommit)
-      - [CodeBuild](#codebuild)
-      - [CodeDeploy](#codedeploy)
-      - [CodePipeline](#codepipeline)
-      - [CodeArtifact](#codeartifact)
-      - [AWS X-Ray](#aws-x-ray)
-    - [📱 Front-End-Web and Mobile:](#-front-end-web-and-mobile)
-      - [AWS Amplify](#aws-amplify)
-      - [Amazon API Gateway](#amazon-api-gateway)
-      - [AWS Device Farm](#aws-device-farm)
-      - [Amazon Pinpoint](#amazon-pinpoint)
+    - [🤖 AI \& Machine Learning](#-ai--machine-learning)
+      - [Amazon Comprehend](#amazon-comprehend)
+      - [Amazon Forecast](#amazon-forecast)
+      - [Amazon Fraud Detector](#amazon-fraud-detector)
+      - [Amazon Kendra](#amazon-kendra)
+      - [Amazon Lex](#amazon-lex)
+      - [Amazon Polly](#amazon-polly)
+      - [Amazon Rekognition](#amazon-rekognition)
+      - [Amazon SageMaker](#amazon-sagemaker)
+      - [Amazon Textract](#amazon-textract)
+      - [Amazon Transcribe](#amazon-transcribe)
+      - [Amazon Translate](#amazon-translate)
+      - [Amazon Q](#amazon-q)
     - [📊 Analytics \& Big Data](#-analytics--big-data)
       - [Kinesis](#kinesis)
       - [Glue](#glue)
@@ -94,10 +26,65 @@
       - [AWS Lake Formation](#aws-lake-formation)
       - [Amazon Managed Streaming for Apache Kafka (Amazon MSK)](#amazon-managed-streaming-for-apache-kafka-amazon-msk)
       - [Amazon OpenSearch Service](#amazon-opensearch-service)
+    - [🧩 App Integration](#-app-integration)
+      - [Amazon MQ](#amazon-mq)
+      - [Amazon AppFlow](#amazon-appflow)
+      - [AWS AppSync](#aws-appsync)
+      - [Amazon EventBridge](#amazon-eventbridge)
+      - [AWS Step Functions](#aws-step-functions)
+      - [Amazon Simple Notification Service (Amazon SNS)](#amazon-simple-notification-service-amazon-sns)
+      - [Amazon Simple Queue Service (Amazon SQS)](#amazon-simple-queue-service-amazon-sqs)
+    - [💾 Compute](#-compute)
+      - [EC2](#ec2)
+      - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
+      - [Lambda](#lambda)
+      - [Fargate](#fargate)
+      - [Elastic Beanstalk](#elastic-beanstalk)
+      - [AWS Batch](#aws-batch)
+      - [AWS Outposts](#aws-outposts)
+      - [AWS Serverless Application Repository](#aws-serverless-application-repository)
+      - [VMware Cloud on AWS](#vmware-cloud-on-aws)
+      - [AWS Wavelength](#aws-wavelength)
+      - [Amazon Lightsail](#amazon-lightsail)
+    - [🐋 Container](#-container)
+      - [Amazon ECS Anywhere](#amazon-ecs-anywhere)
+      - [Amazon EKS Anywhere](#amazon-eks-anywhere)
+      - [Amazon EKS Distro](#amazon-eks-distro)
+      - [Amazon Elastic Container Registry (Amazon ECR)](#amazon-elastic-container-registry-amazon-ecr)
+      - [Amazon Elastic Container Service (Amazon ECS)](#amazon-elastic-container-service-amazon-ecs)
+      - [Amazon Elastic Kubernetes Service (Amazon EKS)](#amazon-elastic-kubernetes-service-amazon-eks)
+    - [🛢️ Database](#️-database)
+      - [Amazon Aurora](#amazon-aurora)
+      - [Amazon Aurora Serverless](#amazon-aurora-serverless)
+      - [Amazon DocumentDB (with MongoDB compatibility)](#amazon-documentdb-with-mongodb-compatibility)
+      - [Amazon DynamoDB](#amazon-dynamodb)
+      - [Amazon ElastiCache](#amazon-elasticache)
+      - [Amazon Keyspaces (for Apache Cassandra)](#amazon-keyspaces-for-apache-cassandra)
+      - [Amazon Neptune](#amazon-neptune)
+      - [Amazon Quantum Ledger Database (Amazon QLDB)](#amazon-quantum-ledger-database-amazon-qldb)
+      - [Amazon RDS](#amazon-rds)
+      - [Amazon Redshift](#amazon-redshift)
+    - [🧰 Developer Tools](#-developer-tools)
+      - [CodeCommit](#codecommit)
+      - [CodeBuild](#codebuild)
+      - [CodeDeploy](#codedeploy)
+      - [CodePipeline](#codepipeline)
+      - [CodeArtifact](#codeartifact)
+      - [AWS X-Ray](#aws-x-ray)
+    - [🌐 Edge \& IoT](#-edge--iot)
+      - [AWS IoT Core](#aws-iot-core)
+      - [AWS Greengrass](#aws-greengrass)
     - [🧑‍💻 End User \& Business Applications](#-end-user--business-applications)
       - [Amazon WorkSpaces](#amazon-workspaces)
+      - [Amazon WorkSpaces Secure Browser](#amazon-workspaces-secure-browser)
       - [Amazon AppStream](#amazon-appstream)
       - [Amazon Connect](#amazon-connect)
+      - [Amazon Simple Email Service (Amazon SES)](#amazon-simple-email-service-amazon-ses)
+    - [📱 Front-End-Web and Mobile:](#-front-end-web-and-mobile)
+      - [AWS Amplify](#aws-amplify)
+      - [Amazon API Gateway](#amazon-api-gateway)
+      - [AWS Device Farm](#aws-device-farm)
+      - [Amazon Pinpoint](#amazon-pinpoint)
     - [🧰 Management \& Governance](#-management--governance)
       - [AWS Cost Explorer](#aws-cost-explorer)
       - [AWS Budgets](#aws-budgets)
@@ -120,24 +107,12 @@
       - [AWS Systems Manager](#aws-systems-manager)
       - [AWS Trusted Advisor](#aws-trusted-advisor)
       - [AWS Well-Architected Tool](#aws-well-architected-tool)
-    - [🤖 AI \& Machine Learning](#-ai--machine-learning)
-      - [Amazon Comprehend](#amazon-comprehend)
-      - [Amazon Forecast](#amazon-forecast)
-      - [Amazon Fraud Detector](#amazon-fraud-detector)
-      - [Amazon Kendra](#amazon-kendra)
-      - [Amazon Lex](#amazon-lex)
-      - [Amazon Polly](#amazon-polly)
-      - [Amazon Rekognition](#amazon-rekognition)
-      - [Amazon SageMaker](#amazon-sagemaker)
-      - [Amazon Textract](#amazon-textract)
-      - [Amazon Transcribe](#amazon-transcribe)
-      - [Amazon Translate](#amazon-translate)
-    - [🧩 App Integration](#-app-integration)
-      - [Amazon MQ](#amazon-mq)
-      - [Amazon AppFlow](#amazon-appflow)
-      - [AWS AppSync](#aws-appsync)
-      - [Amazon EventBridge](#amazon-eventbridge)
-      - [AWS Step Functions](#aws-step-functions)
+      - [AWS Cost and Usage Reports (AWS CUR)](#aws-cost-and-usage-reports-aws-cur)
+      - [AWS Marketplace](#aws-marketplace)
+      - [AWS Service Quotas](#aws-service-quotas)
+    - [🎬 Media Services](#-media-services)
+      - [Amazon Elastic Transcoder](#amazon-elastic-transcoder)
+      - [Amazon Kinesis Video Streams](#amazon-kinesis-video-streams)
     - [🔄 Migration \& Transfer](#-migration--transfer)
       - [AWS Application Discovery Service](#aws-application-discovery-service)
       - [AWS Application Migration Service (MGN)](#aws-application-migration-service-mgn)
@@ -146,12 +121,48 @@
       - [AWS Migration Hub](#aws-migration-hub)
       - [AWS Snow Family](#aws-snow-family)
       - [AWS Transfer Family](#aws-transfer-family)
-    - [🌐 Edge \& IoT](#-edge--iot)
-      - [AWS IoT Core](#aws-iot-core)
-      - [AWS Greengrass](#aws-greengrass)
-    - [🎬 Media Services](#-media-services)
-      - [Amazon Elastic Transcoder](#amazon-elastic-transcoder)
-      - [Amazon Kinesis Video Streams](#amazon-kinesis-video-streams)
+      - [Migration Evaluator](#migration-evaluator)
+      - [AWS Schema Conversion Tool (AWS SCT)](#aws-schema-conversion-tool-aws-sct)
+    - [🌐 Networking \& CDN](#-networking--cdn)
+      - [AWS Client VPN](#aws-client-vpn)
+      - [Amazon CloudFront](#amazon-cloudfront)
+      - [AWS Direct Connect](#aws-direct-connect)
+      - [Elastic Load Balancing (ELB)](#elastic-load-balancing-elb)
+      - [AWS Global Accelerator](#aws-global-accelerator)
+      - [AWS PrivateLink](#aws-privatelink)
+      - [Amazon Route 53](#amazon-route-53)
+      - [AWS Site-to-Site VPN](#aws-site-to-site-vpn)
+      - [AWS Transit Gateway](#aws-transit-gateway)
+      - [Amazon VPC (Virtual Private Cloud)](#amazon-vpc-virtual-private-cloud)
+    - [📦 Storage \& Backup](#-storage--backup)
+      - [AWS Backup](#aws-backup)
+      - [Amazon Elastic Block Store (Amazon EBS)](#amazon-elastic-block-store-amazon-ebs)
+      - [Amazon Elastic File System (Amazon EFS)](#amazon-elastic-file-system-amazon-efs)
+      - [Amazon FSx (for Windows, Lustre, NetApp, OpenZFS)](#amazon-fsx-for-windows-lustre-netapp-openzfs)
+      - [Amazon S3](#amazon-s3)
+      - [Amazon S3 Glacier](#amazon-s3-glacier)
+      - [AWS Storage Gateway](#aws-storage-gateway)
+    - [🔒 Security, Identity \& Compliance](#-security-identity--compliance)
+      - [AWS Artifact](#aws-artifact)
+      - [AWS Audit Manager](#aws-audit-manager)
+      - [AWS Certificate Manager (ACM)](#aws-certificate-manager-acm)
+      - [AWS CloudHSM](#aws-cloudhsm)
+      - [Amazon Cognito](#amazon-cognito)
+      - [Amazon Detective](#amazon-detective)
+      - [AWS Directory Service](#aws-directory-service)
+      - [AWS Firewall Manager](#aws-firewall-manager)
+      - [Amazon GuardDuty](#amazon-guardduty)
+      - [AWS IAM Identity Center](#aws-iam-identity-center)
+      - [AWS Identity and Access Management (IAM)](#aws-identity-and-access-management-iam)
+      - [Amazon Inspector](#amazon-inspector)
+      - [AWS Key Management Service (AWS KMS)](#aws-key-management-service-aws-kms)
+      - [Amazon Macie](#amazon-macie)
+      - [AWS Network Firewall](#aws-network-firewall)
+      - [AWS Resource Access Manager (AWS RAM)](#aws-resource-access-manager-aws-ram)
+      - [AWS Secrets Manager](#aws-secrets-manager)
+      - [AWS Security Hub](#aws-security-hub)
+      - [AWS Shield](#aws-shield)
+      - [AWS WAF (Web Application Firewall)](#aws-waf-web-application-firewall)
   - [Support Pläne](#support-pläne)
     - [🟢 1. Basic Support](#-1-basic-support)
     - [🔵 2. Developer Support](#-2-developer-support)
@@ -191,6 +202,188 @@
     - [🔧 Operations Perspective](#-operations-perspective)
 
 ## Services
+
+### 🤖 AI & Machine Learning
+
+#### Amazon Comprehend
+
+Natural language processing (NLP) service.
+
+> Amazon Comprehend uses machine learning to extract insights from unstructured text. It supports sentiment analysis, entity recognition, language detection, and topic modeling -- useful for analyzing documents, emails, or customer feedback.
+
+#### Amazon Forecast
+
+Time-series forecasting service.
+
+> Amazon Forecast is a fully managed service that uses machine learning to generate accurate forecasts based on historical time-series data. It requires no ML experience and is often used for capacity planning, financial forecasts, and inventory optimization.
+
+#### Amazon Fraud Detector
+
+Real-time fraud detection service.
+
+> Amazon Fraud Detector uses machine learning to identify potentially fraudulent activities in real time, such as online payment fraud or account takeover attempts. It's designed for use in finance, gaming, and e-commerce applications.
+
+#### Amazon Kendra
+
+Intelligent enterprise search.
+
+> Amazon Kendra is a highly accurate enterprise search service powered by machine learning. It enables users to search across internal documents using natural language queries and delivers precise, context-aware answers.
+
+#### Amazon Lex
+
+Build conversational interfaces (chatbots).
+
+> Amazon Lex provides advanced natural language understanding (NLU) and automatic speech recognition (ASR), making it easy to build voice and text chatbots for applications such as customer support, help desks, and IVR systems. It powers Alexa.
+
+#### Amazon Polly
+
+Convert text to lifelike speech.
+
+> Amazon Polly is a text-to-speech (TTS) service that uses deep learning to synthesize natural-sounding human speech. It supports dozens of languages and voices, enabling voice features for apps, assistive tools, or content narration.
+
+#### Amazon Rekognition
+
+Analyze images and videos using ML.
+
+> Amazon Rekognition provides image and video analysis capabilities like face detection, object recognition, content moderation, text detection, and facial comparison. It's used in security, media management, and customer analytics.
+
+#### Amazon SageMaker
+
+Build, train, and deploy ML models.
+
+> Amazon SageMaker is an end-to-end machine learning platform that provides tools for data labeling, training, tuning, deploying, and monitoring models. It supports popular frameworks like TensorFlow and PyTorch and includes features like AutoML and model explainability.
+
+#### Amazon Textract
+
+Extract text and data from documents.
+
+> Amazon Textract uses machine learning to automatically extract printed and handwritten text, tables, and forms from scanned documents -- going beyond OCR to understand layout and data context.
+
+#### Amazon Transcribe
+
+Automatic speech-to-text transcription.
+
+> Amazon Transcribe converts spoken language into written text using deep learning. It supports real-time and batch transcription, speaker identification, custom vocabulary, and timestamps -- ideal for captions, call center transcripts, and voice interfaces.
+
+#### Amazon Translate
+
+Language translation with neural networks.
+
+> Amazon Translate is a real-time and batch translation service that uses neural machine translation to deliver high-quality results. It supports dozens of languages and is useful for localization of apps, websites, and content.
+
+#### Amazon Q
+
+Generative AI assistant for AWS and enterprise tasks.
+
+> Amazon Q is a generative AI-powered assistant designed to help users build, operate, and troubleshoot AWS applications more efficiently. It integrates with the AWS Console, IDEs (like VS Code), and documentation, enabling developers and IT teams to ask natural-language questions about AWS resources, code, or cloud operations. It also supports enterprise integrations to help employees query internal data securely using natural language.
+
+--------------------------------------------------------------------------------
+
+### 📊 Analytics & Big Data
+
+#### Kinesis
+
+Real-time data streaming.
+
+> Kinesis ingests and processes real-time streaming data like logs, IoT events, and clicks. Includes Kinesis Streams, Firehose, Analytics, and Video Streams. Used in monitoring, ML pipelines, and analytics.
+
+#### Glue
+
+Serverless ETL & data catalog.
+
+> AWS Glue transforms and moves data between stores. It includes a metadata catalog, jobs, and crawlers. Commonly used to prepare data for analytics or load it into Redshift.
+
+#### EMR
+
+Managed Hadoop/Spark cluster.
+
+> EMR provides a scalable platform to run big data frameworks like Hadoop, Spark, Hive, and Presto. It can read/write from S3 and integrate with data lakes.
+
+#### Athena
+
+Query service for S3 using SQL.
+
+> Serverless service for querying structured data in S3 using Presto SQL engine. You only pay per query scanned. No infrastructure to manage.
+
+#### QuickSight
+
+Business intelligence and dashboards.
+
+> QuickSight creates interactive dashboards and visualizations from AWS data sources. It supports ML insights, serverless scaling, and embeds in apps.
+
+#### AWS Data Exchange
+
+Find and subscribe to third-party data.
+
+> AWS Data Exchange allows you to easily find, subscribe to, and use third-party data in the cloud. It provides access to datasets from data providers such as Reuters, Foursquare, or Nasdaq. Data is delivered directly to Amazon S3, enabling integration with analytics and ML tools.
+
+#### AWS Data Pipeline
+
+Data workflow orchestration.
+
+> AWS Data Pipeline is a web service that helps process and move data between different AWS compute and storage services and on-premises data sources. It allows scheduling, dependency management, and retry logic for workflows like ETL, backups, and log analysis.
+
+#### AWS Lake Formation
+
+Build secure data lakes quickly.
+
+> Lake Formation simplifies setting up secure data lakes on AWS. It automates tasks like data ingestion, cataloging, transformation, and security configuration. It integrates with AWS Glue, IAM, and analytics tools to help you centralize and govern data for analytics and ML.
+
+#### Amazon Managed Streaming for Apache Kafka (Amazon MSK)
+
+Managed Apache Kafka service.
+
+> Amazon MSK is a fully managed service for Apache Kafka that lets you build real-time data streaming applications. MSK handles provisioning, patching, and scaling while integrating with AWS security, monitoring, and data services like Lambda, Kinesis, and S3.
+
+#### Amazon OpenSearch Service
+
+Search and analytics engine.
+
+> Amazon OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale OpenSearch (formerly Elasticsearch) clusters. It's used for log analytics, real-time application monitoring, full-text search, and observability use cases.
+
+### 🧩 App Integration
+
+#### Amazon MQ
+
+Managed message broker (ActiveMQ, RabbitMQ).
+
+> Used for migrating legacy message-based apps that use traditional protocols like AMQP or STOMP.
+
+#### Amazon AppFlow
+
+Managed integration and data transfer between SaaS apps and AWS.
+
+> Amazon AppFlow is a fully managed service that enables secure data transfer between SaaS applications (like Salesforce, Slack, Google Analytics) and AWS services like S3 and Redshift. It supports data transformation, filtering, and mapping as part of the flow and enforces security and compliance policies.
+
+#### AWS AppSync
+
+Managed GraphQL API service.
+
+> AWS AppSync is a serverless service that simplifies building scalable GraphQL APIs. It integrates with DynamoDB, Lambda, Elasticsearch/OpenSearch, and other data sources. AppSync handles real-time subscriptions, offline data sync, and conflict resolution for mobile and web apps.
+
+#### Amazon EventBridge
+
+Event bus for decoupled app communication.
+
+> Amazon EventBridge is a serverless event bus that connects application components using events from AWS services, SaaS apps, or custom sources. It routes events based on rules and helps build loosely coupled, event-driven architectures.
+
+#### AWS Step Functions
+
+Orchestrate workflows with visual state machines.
+
+> AWS Step Functions lets you coordinate multiple AWS services into serverless workflows. It uses a visual JSON-based state machine to define tasks, branches, retries, and error handling -- ideal for automation, batch processing, and microservices orchestration.
+
+#### Amazon Simple Notification Service (Amazon SNS)
+
+Pub/Sub messaging for event-driven apps.
+
+> Amazon SNS is a fully managed publish/subscribe messaging service that enables decoupled communication between components. It allows publishers to send messages to multiple subscribers (email, SMS, Lambda, SQS, HTTP) in real time. Common use cases include fan-out messaging, alerts, and notifications.
+
+#### Amazon Simple Queue Service (Amazon SQS)
+
+Message queuing for decoupled systems.
+
+> Amazon SQS is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless apps. It offers two types of queues: Standard (best-effort ordering, high throughput) and FIFO (first-in-first-out, exactly-once delivery). SQS improves fault tolerance and load distribution.
 
 ### 💾 Compute
 
@@ -254,6 +447,12 @@ Low-latency applications at the network edge.
 
 > AWS Wavelength brings AWS compute and storage services to the edge of telecom networks. It minimizes latency to deliver ultra-low-latency applications like AR/VR, live video streaming, and real-time gaming -- often below 10ms.
 
+#### Amazon Lightsail
+
+Simplified cloud platform for small apps and projects.
+
+> Amazon Lightsail is an easy-to-use cloud platform that provides virtual servers (instances), managed databases, storage, networking, and more -- all bundled with predictable pricing. It's ideal for small businesses, quick prototypes, WordPress sites, or developers new to AWS who want a simplified experience without deep AWS service integration.
+
 --------------------------------------------------------------------------------
 
 ### 🐋 Container
@@ -293,52 +492,6 @@ Managed container orchestration.
 Managed Kubernetes on AWS.
 
 > Amazon EKS is a managed service to run Kubernetes workloads in the AWS cloud or on-prem. It automates cluster provisioning, upgrades, and scalability while integrating tightly with other AWS services for networking, logging, and security.
-
---------------------------------------------------------------------------------
-
-### 📦 Storage & Backup
-
-#### AWS Backup
-
-Centralized backup management.
-
-> AWS Backup automates and centrally manages backups across AWS services like EFS, RDS, DynamoDB, EC2 (via EBS), and S3\. It enforces backup policies, supports compliance requirements, and allows cross-region and cross-account backup.
-
-#### Amazon Elastic Block Store (Amazon EBS)
-
-Block storage for EC2 instances.
-
-> Amazon EBS provides persistent, high-performance block storage volumes for use with EC2\. It supports SSD and HDD volume types, encryption, snapshots, and can be attached or detached independently of the EC2 lifecycle.
-
-#### Amazon Elastic File System (Amazon EFS)
-
-Scalable shared file storage.
-
-> Amazon EFS is a managed NFS file system that scales elastically with demand. It can be accessed concurrently from thousands of EC2 instances and integrates with Lambda, ECS, and on-prem systems via AWS Direct Connect.
-
-#### Amazon FSx (for Windows, Lustre, NetApp, OpenZFS)
-
-Managed high-performance file systems.
-
-> Amazon FSx offers fully managed file storage optimized for different workloads: FSx for Windows File Server: SMB-based file storage for Windows apps. FSx for Lustre: High-speed file storage for HPC and ML. FSx for NetApp ONTAP: Hybrid storage with ONTAP features. FSx for OpenZFS: Open-source ZFS for Linux-based workloads.
-
-#### Amazon S3
-
-Scalable object storage.
-
-> Amazon Simple Storage Service (S3) is object storage built for high durability, availability, and security. It stores data in buckets, supports lifecycle policies, event triggers, and is used for backups, static hosting, and data lakes.
-
-#### Amazon S3 Glacier
-
-Archival storage for long-term data.
-
-> Amazon S3 Glacier and Glacier Deep Archive offer secure, durable, and low-cost storage for long-term backups and archives. It supports retrieval options ranging from minutes to hours depending on the tier.
-
-#### AWS Storage Gateway
-
-Hybrid cloud storage integration.
-
-> AWS Storage Gateway connects on-premises environments with cloud storage, providing file, volume, and tape-based interfaces. It caches frequently accessed data locally and backs it up to S3 or Glacier, enabling cloud-based backup and disaster recovery.
 
 --------------------------------------------------------------------------------
 
@@ -406,194 +559,6 @@ Fully managed cloud data warehouse.
 
 --------------------------------------------------------------------------------
 
-### 🌐 Networking & CDN
-
-#### AWS Client VPN
-
-Secure remote access to AWS and on-prem networks.
-
-> AWS Client VPN is a fully managed, scalable VPN service that enables users to securely connect to AWS and on-premises networks from any location. It supports OpenVPN-based clients, authentication via IAM or Active Directory, and integrates with AWS networking services.
-
-#### Amazon CloudFront
-
-Global content delivery network (CDN).
-
-> Amazon CloudFront delivers static and dynamic content, APIs, and video securely with low latency via a network of global edge locations. It integrates with S3, Lambda\@Edge, and Shield for DDoS protection and supports customizable caching and SSL.
-
-#### AWS Direct Connect
-
-Dedicated network connection to AWS.
-
-> AWS Direct Connect establishes a private, high-bandwidth network link between your on-premises environment and AWS. It provides consistent performance, reduces bandwidth costs, and enhances security compared to public internet traffic.
-
-#### Elastic Load Balancing (ELB)
-
-Distribute traffic across resources.
-
-> ELB automatically distributes incoming traffic across multiple targets such as EC2 instances, containers, and IP addresses. It includes Application Load Balancer (HTTP/HTTPS), Network Load Balancer (TCP/UDP), and Gateway Load Balancer (appliance-based use cases).
-
-#### AWS Global Accelerator
-
-Improve global application performance.
-
-> AWS Global Accelerator uses the AWS global network to route user traffic to the optimal AWS endpoint based on health, geography, and routing policies. It improves availability and performance for global users by bypassing public internet bottlenecks.
-
-#### AWS PrivateLink
-
-Secure private connectivity to AWS services.
-
-> AWS PrivateLink enables private access to AWS services and VPC endpoints without exposing traffic to the public internet. It enhances security by keeping traffic within the AWS network and supports services like S3, EC2, and custom applications.
-
-#### Amazon Route 53
-
-Scalable and reliable DNS service.
-
-> Route 53 is AWS's domain name system (DNS) service, offering domain registration, routing, and health checks. It supports latency-based, weighted, and geolocation routing to optimize application availability and performance.
-
-#### AWS Site-to-Site VPN
-
-Connect on-prem networks to AWS via VPN.
-
-> Site-to-Site VPN provides secure, encrypted communication between your on-premises network and AWS VPC over the public internet. It supports automatic failover and integrates with AWS Direct Connect and Transit Gateway.
-
-#### AWS Transit Gateway
-
-Central hub for VPC and on-prem network routing.
-
-> Transit Gateway simplifies network architecture by acting as a central hub for connecting multiple VPCs, VPNs, and Direct Connect links. It improves scalability, reduces complexity, and supports inter-region peering.
-
-#### Amazon VPC (Virtual Private Cloud)
-
-Isolated cloud network environment.
-
-> Amazon VPC lets you define and manage a logically isolated section of the AWS cloud. You control IP ranges, subnets, routing, firewalls (security groups and NACLs), internet access, and VPN connections to build secure, scalable network environments.
-
---------------------------------------------------------------------------------
-
-### 🔒 Security, Identity & Compliance
-
-#### AWS Artifact
-
-Access compliance reports and agreements.
-
-> AWS Artifact is a self-service portal for on-demand access to AWS's compliance documentation, including SOC, ISO, PCI, and HIPAA reports. It supports audit readiness, vendor assessments, and regulatory requirements.
-
-#### AWS Audit Manager
-
-Automate evidence collection for audits.
-
-> AWS Audit Manager helps you continuously audit your AWS usage. It automatically collects evidence from AWS services to simplify compliance assessments for standards like GDPR, HIPAA, and ISO 27001.
-
-#### AWS Certificate Manager (ACM)
-
-Manage SSL/TLS certificates.
-
-> ACM handles the provisioning, deployment, and renewal of public and private SSL/TLS certificates. It supports integration with services like CloudFront and ELB to enable HTTPS without manual cert management.
-
-#### AWS CloudHSM
-
-Dedicated hardware security module.
-
-> AWS CloudHSM provides FIPS 140-2 Level 3-compliant hardware security modules for cryptographic key storage and operations. It offers full control over keys and integrates with custom security applications via standard APIs.
-
-#### Amazon Cognito
-
-User sign-up, sign-in, and identity management.
-
-> Amazon Cognito enables you to add authentication, authorization, and user management to your web and mobile apps. It supports social logins (Google, Facebook), SAML, and user pools with fine-grained access control.
-
-#### Amazon Detective
-
-Analyze and visualize security investigations.
-
-> Amazon Detective helps investigate and analyze potential security issues using data from GuardDuty, CloudTrail, and VPC Flow Logs. It provides visualizations and context to identify root causes and relationships across events.
-
-#### AWS Directory Service
-
-Manage directories in AWS.
-
-> AWS Directory Service enables integration with Microsoft Active Directory for identity and access control. It supports applications that require AD and allows seamless AWS authentication and SSO integration.
-
-#### AWS Firewall Manager
-
-Centralized firewall and policy management.
-
-> Firewall Manager simplifies security policy management across multiple AWS accounts and resources. It manages rules for AWS WAF, Shield, and VPC security groups from a central admin account in AWS Organizations.
-
-#### Amazon GuardDuty
-
-Threat detection and monitoring.
-
-> GuardDuty is a threat detection service that uses ML and threat intelligence to identify suspicious behavior and potential threats in your AWS accounts. It analyzes logs from CloudTrail, VPC Flow Logs, and DNS activity.
-
-#### AWS IAM Identity Center (formerly AWS SSO)
-
-Centralized identity and access control.
-
-> IAM Identity Center enables single sign-on (SSO) to AWS accounts and cloud apps. It integrates with identity providers and supports role-based access control across multiple AWS accounts through AWS Organizations.
-
-#### AWS Identity and Access Management (IAM)
-
-Manage users, roles, and permissions.
-
-> IAM lets you define who can access what in your AWS environment. It supports fine-grained access control through users, groups, roles, and policies -- foundational for secure cloud operations.
-
-#### Amazon Inspector
-
-Automated security assessment.
-
-> Amazon Inspector is a vulnerability scanner for EC2, Lambda, and container workloads. It automatically assesses your infrastructure for security flaws, missing patches, and policy violations using CVE databases.
-
-#### AWS Key Management Service (AWS KMS)
-
-Manage encryption keys.
-
-> AWS KMS allows you to create and control cryptographic keys used for data encryption across AWS services. It supports integrated key rotation, auditing, and fine-grained access controls.
-
-#### Amazon Macie
-
-Discover and protect sensitive data.
-
-> Amazon Macie uses ML to automatically detect sensitive data such as PII and financial records in S3\. It classifies, tags, and monitors data to help ensure data privacy and regulatory compliance.
-
-#### AWS Network Firewall
-
-Managed network traffic filtering.
-
-> AWS Network Firewall is a stateful, managed firewall for VPCs. It enables traffic inspection, rule enforcement, intrusion detection, and logging to protect VPC-level network boundaries.
-
-#### AWS Resource Access Manager (AWS RAM)
-
-Share AWS resources across accounts.
-
-> AWS RAM lets you securely share AWS resources like subnets, Transit Gateways, or License Manager configurations across AWS accounts in your organization -- reducing duplication and increasing efficiency.
-
-#### AWS Secrets Manager
-
-Store and rotate secrets securely.
-
-> AWS Secrets Manager manages secrets such as database credentials, API keys, and tokens. It automates rotation, access control, and auditing -- enhancing security for sensitive data.
-
-#### AWS Security Hub
-
-Centralized view of security findings.
-
-> AWS Security Hub aggregates and prioritizes security alerts from AWS services like GuardDuty, Inspector, and Macie, as well as third-party tools. It helps you monitor compliance and overall security posture.
-
-#### AWS Shield
-
-DDoS protection for applications.
-
-> AWS Shield offers always-on protection against DDoS attacks. Shield Standard is free for all customers, while Shield Advanced includes enhanced detection, 24/7 support, and cost protection.
-
-#### AWS WAF (Web Application Firewall)
-
-Protect applications from web threats.
-
-> AWS WAF lets you create security rules to filter malicious web traffic to services like CloudFront, ALB, or API Gateway. It defends against threats like SQL injection, cross-site scripting (XSS), and bot traffic.
-
---------------------------------------------------------------------------------
-
 ### 🧰 Developer Tools
 
 #### CodeCommit
@@ -632,7 +597,47 @@ Distributed tracing and analysis.
 
 > AWS X-Ray helps developers analyze and debug distributed applications, such as those built using microservices or serverless architectures. It provides insights into request flows, latencies, and errors by tracing requests as they travel through services.
 
---------------------------------------------------------------------------------
+### 🌐 Edge & IoT
+
+#### AWS IoT Core
+
+> Managed service for IoT device connectivity. AWS IoT Core allows you to securely connect, manage, and ingest data from billions of IoT devices. It supports device communication protocols and integrates with other AWS services for data processing and analytics.
+
+#### AWS Greengrass
+
+> IoT edge computing software. AWS Greengrass extends AWS functionality to edge devices so they can collect and analyze data locally, respond quickly to local events, and operate offline while syncing with the cloud when connected.
+
+### 🧑‍💻 End User & Business Applications
+
+#### Amazon WorkSpaces
+
+Virtual desktops in the cloud.
+
+> WorkSpaces provides Windows/Linux desktops on demand, accessible from any device. Good for remote work, secure environments, or temporary staff.
+
+#### Amazon WorkSpaces Secure Browser
+
+Secure, isolated browser access to web apps.
+
+> Amazon WorkSpaces Secure Browser is a managed, isolated browser service that lets users securely access internal websites and SaaS apps without a VPN or exposing the network. It runs in a containerized environment on AWS, reducing the risk of malware or data leaks from unmanaged or compromised endpoints. Ideal for contractors, BYOD users, or remote access to sensitive apps.
+
+#### Amazon AppStream
+
+App streaming to user devices.
+
+> AppStream streams desktop applications via browser without installing them locally. Ideal for training, demos, or remote access to desktop software.
+
+#### Amazon Connect
+
+Cloud-based contact center.
+
+> Amazon Connect is an omnichannel contact center platform with voice, chat, and analytics. Fully managed and integrates with other AWS services like Lambda and S3.
+
+#### Amazon Simple Email Service (Amazon SES)
+
+Scalable, cloud-based email sending service.
+
+> Amazon SES is a cost-effective, flexible, and scalable email service designed to help businesses send transactional, marketing, and bulk emails. It supports SMTP and API-based sending, real-time delivery metrics, reputation management, and email receiving. Common use cases include password resets, order confirmations, and promotional emails.
 
 ### 📱 Front-End-Web and Mobile:
 
@@ -659,94 +664,6 @@ Test mobile and web apps on real devices.
 User engagement and messaging service.
 
 > Amazon Pinpoint enables you to send targeted push notifications, emails, SMS messages, and in-app messages to engage users across platforms. It's useful for marketing, user analytics, and transactional messaging, and supports segmentation, A/B testing, and campaign tracking.
-
---------------------------------------------------------------------------------
-
-### 📊 Analytics & Big Data
-
-#### Kinesis
-
-Real-time data streaming.
-
-> Kinesis ingests and processes real-time streaming data like logs, IoT events, and clicks. Includes Kinesis Streams, Firehose, Analytics, and Video Streams. Used in monitoring, ML pipelines, and analytics.
-
-#### Glue
-
-Serverless ETL & data catalog.
-
-> AWS Glue transforms and moves data between stores. It includes a metadata catalog, jobs, and crawlers. Commonly used to prepare data for analytics or load it into Redshift.
-
-#### EMR
-
-Managed Hadoop/Spark cluster.
-
-> EMR provides a scalable platform to run big data frameworks like Hadoop, Spark, Hive, and Presto. It can read/write from S3 and integrate with data lakes.
-
-#### Athena
-
-Query service for S3 using SQL.
-
-> Serverless service for querying structured data in S3 using Presto SQL engine. You only pay per query scanned. No infrastructure to manage.
-
-#### QuickSight
-
-Business intelligence and dashboards.
-
-> QuickSight creates interactive dashboards and visualizations from AWS data sources. It supports ML insights, serverless scaling, and embeds in apps.
-
-#### AWS Data Exchange
-
-Find and subscribe to third-party data.
-
-> AWS Data Exchange allows you to easily find, subscribe to, and use third-party data in the cloud. It provides access to datasets from data providers such as Reuters, Foursquare, or Nasdaq. Data is delivered directly to Amazon S3, enabling integration with analytics and ML tools.
-
-#### AWS Data Pipeline
-
-Data workflow orchestration.
-
-> AWS Data Pipeline is a web service that helps process and move data between different AWS compute and storage services and on-premises data sources. It allows scheduling, dependency management, and retry logic for workflows like ETL, backups, and log analysis.
-
-#### AWS Lake Formation
-
-Build secure data lakes quickly.
-
-> Lake Formation simplifies setting up secure data lakes on AWS. It automates tasks like data ingestion, cataloging, transformation, and security configuration. It integrates with AWS Glue, IAM, and analytics tools to help you centralize and govern data for analytics and ML.
-
-#### Amazon Managed Streaming for Apache Kafka (Amazon MSK)
-
-Managed Apache Kafka service.
-
-> Amazon MSK is a fully managed service for Apache Kafka that lets you build real-time data streaming applications. MSK handles provisioning, patching, and scaling while integrating with AWS security, monitoring, and data services like Lambda, Kinesis, and S3.
-
-#### Amazon OpenSearch Service
-
-Search and analytics engine.
-
-> Amazon OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale OpenSearch (formerly Elasticsearch) clusters. It's used for log analytics, real-time application monitoring, full-text search, and observability use cases.
-
---------------------------------------------------------------------------------
-
-### 🧑‍💻 End User & Business Applications
-
-#### Amazon WorkSpaces
-
-Virtual desktops in the cloud.
-
-> WorkSpaces provides Windows/Linux desktops on demand, accessible from any device. Good for remote work, secure environments, or temporary staff.
-
-#### Amazon AppStream
-
-App streaming to user devices.
-
-> AppStream streams desktop applications via browser without installing them locally. Ideal for training, demos, or remote access to desktop software.
-
-#### Amazon Connect
-
-Cloud-based contact center.
-
-> Amazon Connect is an omnichannel contact center platform with voice, chat, and analytics. Fully managed and integrates with other AWS services like Lambda and S3.
-
---------------------------------------------------------------------------------
 
 ### 🧰 Management & Governance
 
@@ -876,111 +793,37 @@ Evaluate workloads against AWS best practices.
 
 > The Well-Architected Tool helps you review your architecture using the five pillars of the AWS Well-Architected Framework. It provides actionable guidance to improve workloads across security, performance, cost, and more.
 
---------------------------------------------------------------------------------
+#### AWS Cost and Usage Reports (AWS CUR)
 
-### 🤖 AI & Machine Learning
+Detailed billing and usage data.
 
-#### Amazon Comprehend
+> AWS Cost and Usage Reports provide comprehensive data on your AWS usage and charges. They deliver detailed line-item reports to an S3 bucket in CSV or Parquet format, enabling deep analysis using tools like Athena, QuickSight, or Redshift. Useful for budgeting, chargebacks, and cost optimization.
 
-Natural language processing (NLP) service.
+#### AWS Marketplace
 
-> Amazon Comprehend uses machine learning to extract insights from unstructured text. It supports sentiment analysis, entity recognition, language detection, and topic modeling -- useful for analyzing documents, emails, or customer feedback.
+Curated catalog of third-party software.
 
-#### Amazon Forecast
+> AWS Marketplace is a digital catalog where you can find, test, and deploy third-party software that runs on AWS. It includes AMIs, SaaS apps, container images, ML models, and data products. It simplifies procurement and billing with pay-as-you-go and BYOL options.
 
-Time-series forecasting service.
+#### AWS Service Quotas
 
-> Amazon Forecast is a fully managed service that uses machine learning to generate accurate forecasts based on historical time-series data. It requires no ML experience and is often used for capacity planning, financial forecasts, and inventory optimization.
+View and manage service limits for your AWS resources.\
 
-#### Amazon Fraud Detector
+> AWS Service Quotas help you monitor and manage the maximum usage limits for AWS services in your account. These quotas include soft limits (which you can request to increase) and hard limits (which are fixed). The Service Quotas console and API let you track usage against limits and submit increase requests where applicable. This ensures you avoid disruptions or failures when scaling applications.
 
-Real-time fraud detection service.
+### 🎬 Media Services
 
-> Amazon Fraud Detector uses machine learning to identify potentially fraudulent activities in real time, such as online payment fraud or account takeover attempts. It's designed for use in finance, gaming, and e-commerce applications.
+#### Amazon Elastic Transcoder
 
-#### Amazon Kendra
+Convert media files into different formats.
 
-Intelligent enterprise search.
+> Amazon Elastic Transcoder is a media transcoding service in the cloud. It converts video and audio files from one format to another for compatibility across devices like smartphones, tablets, and browsers. It supports presets for popular formats and integrates with S3 and SNS for notifications.
 
-> Amazon Kendra is a highly accurate enterprise search service powered by machine learning. It enables users to search across internal documents using natural language queries and delivers precise, context-aware answers.
+#### Amazon Kinesis Video Streams
 
-#### Amazon Lex
+Ingest and process video streams.
 
-Build conversational interfaces (chatbots).
-
-> Amazon Lex provides advanced natural language understanding (NLU) and automatic speech recognition (ASR), making it easy to build voice and text chatbots for applications such as customer support, help desks, and IVR systems. It powers Alexa.
-
-#### Amazon Polly
-
-Convert text to lifelike speech.
-
-> Amazon Polly is a text-to-speech (TTS) service that uses deep learning to synthesize natural-sounding human speech. It supports dozens of languages and voices, enabling voice features for apps, assistive tools, or content narration.
-
-#### Amazon Rekognition
-
-Analyze images and videos using ML.
-
-> Amazon Rekognition provides image and video analysis capabilities like face detection, object recognition, content moderation, text detection, and facial comparison. It's used in security, media management, and customer analytics.
-
-#### Amazon SageMaker
-
-Build, train, and deploy ML models.
-
-> Amazon SageMaker is an end-to-end machine learning platform that provides tools for data labeling, training, tuning, deploying, and monitoring models. It supports popular frameworks like TensorFlow and PyTorch and includes features like AutoML and model explainability.
-
-#### Amazon Textract
-
-Extract text and data from documents.
-
-> Amazon Textract uses machine learning to automatically extract printed and handwritten text, tables, and forms from scanned documents -- going beyond OCR to understand layout and data context.
-
-#### Amazon Transcribe
-
-Automatic speech-to-text transcription.
-
-> Amazon Transcribe converts spoken language into written text using deep learning. It supports real-time and batch transcription, speaker identification, custom vocabulary, and timestamps -- ideal for captions, call center transcripts, and voice interfaces.
-
-#### Amazon Translate
-
-Language translation with neural networks.
-
-> Amazon Translate is a real-time and batch translation service that uses neural machine translation to deliver high-quality results. It supports dozens of languages and is useful for localization of apps, websites, and content.
-
---------------------------------------------------------------------------------
-
-### 🧩 App Integration
-
-#### Amazon MQ
-
-Managed message broker (ActiveMQ, RabbitMQ).
-
-> Used for migrating legacy message-based apps that use traditional protocols like AMQP or STOMP.
-
-#### Amazon AppFlow
-
-Managed integration and data transfer between SaaS apps and AWS.
-
-> Amazon AppFlow is a fully managed service that enables secure data transfer between SaaS applications (like Salesforce, Slack, Google Analytics) and AWS services like S3 and Redshift. It supports data transformation, filtering, and mapping as part of the flow and enforces security and compliance policies.
-
-#### AWS AppSync
-
-Managed GraphQL API service.
-
-> AWS AppSync is a serverless service that simplifies building scalable GraphQL APIs. It integrates with DynamoDB, Lambda, Elasticsearch/OpenSearch, and other data sources. AppSync handles real-time subscriptions, offline data sync, and conflict resolution for mobile and web apps.
-
-#### Amazon EventBridge
-
-Event bus for decoupled app communication.
-
-> Amazon EventBridge is a serverless event bus that connects application components using events from AWS services, SaaS apps, or custom sources. It routes events based on rules and helps build loosely coupled, event-driven architectures.
-
-#### AWS Step Functions
-
-Orchestrate workflows with visual state machines.
-
-> AWS Step Functions lets you coordinate multiple AWS services into serverless workflows. It uses a visual JSON-based state machine to define tasks, branches, retries, and error handling -- ideal for automation, batch processing, and microservices orchestration.
-
---------------------------------------------------------------------------------
+> Amazon Kinesis Video Streams makes it easy to securely stream video from connected devices to AWS for analytics, machine learning, and playback. It supports real-time and batch processing, with automatic encryption, indexing, and integration with services like SageMaker and Rekognition.
 
 ### 🔄 Migration & Transfer
 
@@ -1026,35 +869,245 @@ Managed file transfer via SFTP, FTPS, FTP.
 
 > AWS Transfer Family provides fully managed support for transferring files directly into and out of Amazon S3 using standard file transfer protocols like SFTP, FTPS, and FTP. It enables seamless integration with legacy systems and partners.
 
---------------------------------------------------------------------------------
+#### Migration Evaluator
 
-### 🌐 Edge & IoT
+Assess on-premises costs vs. AWS migration.
 
-#### AWS IoT Core
+> AWS Migration Evaluator provides insights into your current on-premises environment and delivers data-driven cost projections for moving workloads to AWS. It collects usage data from existing infrastructure and generates a business case for cloud migration, including right-sizing and cost optimization recommendations.
 
-> Managed service for IoT device connectivity. AWS IoT Core allows you to securely connect, manage, and ingest data from billions of IoT devices. It supports device communication protocols and integrates with other AWS services for data processing and analytics.
+#### AWS Schema Conversion Tool (AWS SCT)
 
-#### AWS Greengrass
+Convert database schemas for migration.
 
-> IoT edge computing software. AWS Greengrass extends AWS functionality to edge devices so they can collect and analyze data locally, respond quickly to local events, and operate offline while syncing with the cloud when connected.
+> AWS Schema Conversion Tool helps convert database schemas and code objects (like stored procedures and functions) from one database engine to another (e.g., Oracle to PostgreSQL). It's used with AWS DMS to simplify heterogeneous database migrations by automating schema transformation and identifying manual conversion needs.
 
---------------------------------------------------------------------------------
+### 🌐 Networking & CDN
 
-### 🎬 Media Services
+#### AWS Client VPN
 
-#### Amazon Elastic Transcoder
+Secure remote access to AWS and on-prem networks.
 
-Convert media files into different formats.
+> AWS Client VPN is a fully managed, scalable VPN service that enables users to securely connect to AWS and on-premises networks from any location. It supports OpenVPN-based clients, authentication via IAM or Active Directory, and integrates with AWS networking services.
 
-> Amazon Elastic Transcoder is a media transcoding service in the cloud. It converts video and audio files from one format to another for compatibility across devices like smartphones, tablets, and browsers. It supports presets for popular formats and integrates with S3 and SNS for notifications.
+#### Amazon CloudFront
 
-#### Amazon Kinesis Video Streams
+Global content delivery network (CDN).
 
-Ingest and process video streams.
+> Amazon CloudFront delivers static and dynamic content, APIs, and video securely with low latency via a network of global edge locations. It integrates with S3, Lambda\@Edge, and Shield for DDoS protection and supports customizable caching and SSL.
 
-> Amazon Kinesis Video Streams makes it easy to securely stream video from connected devices to AWS for analytics, machine learning, and playback. It supports real-time and batch processing, with automatic encryption, indexing, and integration with services like SageMaker and Rekognition.
+#### AWS Direct Connect
 
---------------------------------------------------------------------------------
+Dedicated network connection to AWS.
+
+> AWS Direct Connect establishes a private, high-bandwidth network link between your on-premises environment and AWS. It provides consistent performance, reduces bandwidth costs, and enhances security compared to public internet traffic.
+
+#### Elastic Load Balancing (ELB)
+
+Distribute traffic across resources.
+
+> ELB automatically distributes incoming traffic across multiple targets such as EC2 instances, containers, and IP addresses. It includes Application Load Balancer (HTTP/HTTPS), Network Load Balancer (TCP/UDP), and Gateway Load Balancer (appliance-based use cases).
+
+#### AWS Global Accelerator
+
+Improve global application performance.
+
+> AWS Global Accelerator uses the AWS global network to route user traffic to the optimal AWS endpoint based on health, geography, and routing policies. It improves availability and performance for global users by bypassing public internet bottlenecks.
+
+#### AWS PrivateLink
+
+Secure private connectivity to AWS services.
+
+> AWS PrivateLink enables private access to AWS services and VPC endpoints without exposing traffic to the public internet. It enhances security by keeping traffic within the AWS network and supports services like S3, EC2, and custom applications.
+
+#### Amazon Route 53
+
+Scalable and reliable DNS service.
+
+> Route 53 is AWS's domain name system (DNS) service, offering domain registration, routing, and health checks. It supports latency-based, weighted, and geolocation routing to optimize application availability and performance.
+
+#### AWS Site-to-Site VPN
+
+Connect on-prem networks to AWS via VPN.
+
+> Site-to-Site VPN provides secure, encrypted communication between your on-premises network and AWS VPC over the public internet. It supports automatic failover and integrates with AWS Direct Connect and Transit Gateway.
+
+#### AWS Transit Gateway
+
+Central hub for VPC and on-prem network routing.
+
+> Transit Gateway simplifies network architecture by acting as a central hub for connecting multiple VPCs, VPNs, and Direct Connect links. It improves scalability, reduces complexity, and supports inter-region peering.
+
+#### Amazon VPC (Virtual Private Cloud)
+
+Isolated cloud network environment.
+
+> Amazon VPC lets you define and manage a logically isolated section of the AWS cloud. You control IP ranges, subnets, routing, firewalls (security groups and NACLs), internet access, and VPN connections to build secure, scalable network environments.
+
+### 📦 Storage & Backup
+
+#### AWS Backup
+
+Centralized backup management.
+
+> AWS Backup automates and centrally manages backups across AWS services like EFS, RDS, DynamoDB, EC2 (via EBS), and S3\. It enforces backup policies, supports compliance requirements, and allows cross-region and cross-account backup.
+
+#### Amazon Elastic Block Store (Amazon EBS)
+
+Block storage for EC2 instances.
+
+> Amazon EBS provides persistent, high-performance block storage volumes for use with EC2\. It supports SSD and HDD volume types, encryption, snapshots, and can be attached or detached independently of the EC2 lifecycle.
+
+#### Amazon Elastic File System (Amazon EFS)
+
+Scalable shared file storage.
+
+> Amazon EFS is a managed NFS file system that scales elastically with demand. It can be accessed concurrently from thousands of EC2 instances and integrates with Lambda, ECS, and on-prem systems via AWS Direct Connect.
+
+#### Amazon FSx (for Windows, Lustre, NetApp, OpenZFS)
+
+Managed high-performance file systems.
+
+> Amazon FSx offers fully managed file storage optimized for different workloads: FSx for Windows File Server: SMB-based file storage for Windows apps. FSx for Lustre: High-speed file storage for HPC and ML. FSx for NetApp ONTAP: Hybrid storage with ONTAP features. FSx for OpenZFS: Open-source ZFS for Linux-based workloads.
+
+#### Amazon S3
+
+Scalable object storage.
+
+> Amazon Simple Storage Service (S3) is object storage built for high durability, availability, and security. It stores data in buckets, supports lifecycle policies, event triggers, and is used for backups, static hosting, and data lakes.
+
+#### Amazon S3 Glacier
+
+Archival storage for long-term data.
+
+> Amazon S3 Glacier and Glacier Deep Archive offer secure, durable, and low-cost storage for long-term backups and archives. It supports retrieval options ranging from minutes to hours depending on the tier.
+
+#### AWS Storage Gateway
+
+Hybrid cloud storage integration.
+
+> AWS Storage Gateway connects on-premises environments with cloud storage, providing file, volume, and tape-based interfaces. It caches frequently accessed data locally and backs it up to S3 or Glacier, enabling cloud-based backup and disaster recovery.
+
+### 🔒 Security, Identity & Compliance
+
+#### AWS Artifact
+
+Access compliance reports and agreements.
+
+> AWS Artifact is a self-service portal for on-demand access to AWS's compliance documentation, including SOC, ISO, PCI, and HIPAA reports. It supports audit readiness, vendor assessments, and regulatory requirements.
+
+#### AWS Audit Manager
+
+Automate evidence collection for audits.
+
+> AWS Audit Manager helps you continuously audit your AWS usage. It automatically collects evidence from AWS services to simplify compliance assessments for standards like GDPR, HIPAA, and ISO 27001.
+
+#### AWS Certificate Manager (ACM)
+
+Manage SSL/TLS certificates.
+
+> ACM handles the provisioning, deployment, and renewal of public and private SSL/TLS certificates. It supports integration with services like CloudFront and ELB to enable HTTPS without manual cert management.
+
+#### AWS CloudHSM
+
+Dedicated hardware security module.
+
+> AWS CloudHSM provides FIPS 140-2 Level 3-compliant hardware security modules for cryptographic key storage and operations. It offers full control over keys and integrates with custom security applications via standard APIs.
+
+#### Amazon Cognito
+
+User sign-up, sign-in, and identity management.
+
+> Amazon Cognito enables you to add authentication, authorization, and user management to your web and mobile apps. It supports social logins (Google, Facebook), SAML, and user pools with fine-grained access control.
+
+#### Amazon Detective
+
+Analyze and visualize security investigations.
+
+> Amazon Detective helps investigate and analyze potential security issues using data from GuardDuty, CloudTrail, and VPC Flow Logs. It provides visualizations and context to identify root causes and relationships across events.
+
+#### AWS Directory Service
+
+Manage directories in AWS.
+
+> AWS Directory Service enables integration with Microsoft Active Directory for identity and access control. It supports applications that require AD and allows seamless AWS authentication and SSO integration.
+
+#### AWS Firewall Manager
+
+Centralized firewall and policy management.
+
+> Firewall Manager simplifies security policy management across multiple AWS accounts and resources. It manages rules for AWS WAF, Shield, and VPC security groups from a central admin account in AWS Organizations.
+
+#### Amazon GuardDuty
+
+Threat detection and monitoring.
+
+> GuardDuty is a threat detection service that uses ML and threat intelligence to identify suspicious behavior and potential threats in your AWS accounts. It analyzes logs from CloudTrail, VPC Flow Logs, and DNS activity.
+
+#### AWS IAM Identity Center
+
+Centralized identity and access control.
+
+> IAM Identity Center enables single sign-on (SSO) to AWS accounts and cloud apps. It integrates with identity providers and supports role-based access control across multiple AWS accounts through AWS Organizations.
+
+#### AWS Identity and Access Management (IAM)
+
+Manage users, roles, and permissions.
+
+> IAM lets you define who can access what in your AWS environment. It supports fine-grained access control through users, groups, roles, and policies -- foundational for secure cloud operations.
+
+#### Amazon Inspector
+
+Automated security assessment.
+
+> Amazon Inspector is a vulnerability scanner for EC2, Lambda, and container workloads. It automatically assesses your infrastructure for security flaws, missing patches, and policy violations using CVE databases.
+
+#### AWS Key Management Service (AWS KMS)
+
+Manage encryption keys.
+
+> AWS KMS allows you to create and control cryptographic keys used for data encryption across AWS services. It supports integrated key rotation, auditing, and fine-grained access controls.
+
+#### Amazon Macie
+
+Discover and protect sensitive data.
+
+> Amazon Macie uses ML to automatically detect sensitive data such as PII and financial records in S3\. It classifies, tags, and monitors data to help ensure data privacy and regulatory compliance.
+
+#### AWS Network Firewall
+
+Managed network traffic filtering.
+
+> AWS Network Firewall is a stateful, managed firewall for VPCs. It enables traffic inspection, rule enforcement, intrusion detection, and logging to protect VPC-level network boundaries.
+
+#### AWS Resource Access Manager (AWS RAM)
+
+Share AWS resources across accounts.
+
+> AWS RAM lets you securely share AWS resources like subnets, Transit Gateways, or License Manager configurations across AWS accounts in your organization -- reducing duplication and increasing efficiency.
+
+#### AWS Secrets Manager
+
+Store and rotate secrets securely.
+
+> AWS Secrets Manager manages secrets such as database credentials, API keys, and tokens. It automates rotation, access control, and auditing -- enhancing security for sensitive data.
+
+#### AWS Security Hub
+
+Centralized view of security findings.
+
+> AWS Security Hub aggregates and prioritizes security alerts from AWS services like GuardDuty, Inspector, and Macie, as well as third-party tools. It helps you monitor compliance and overall security posture.
+
+#### AWS Shield
+
+DDoS protection for applications.
+
+> AWS Shield offers always-on protection against DDoS attacks. Shield Standard is free for all customers, while Shield Advanced includes enhanced detection, 24/7 support, and cost protection.
+
+#### AWS WAF (Web Application Firewall)
+
+Protect applications from web threats.
+
+> AWS WAF lets you create security rules to filter malicious web traffic to services like CloudFront, ALB, or API Gateway. It defends against threats like SQL injection, cross-site scripting (XSS), and bot traffic.
 
 ## Support Pläne
 
