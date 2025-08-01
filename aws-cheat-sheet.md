@@ -53,6 +53,7 @@
       - [Amazon Elastic Container Registry (Amazon ECR)](#amazon-elastic-container-registry-amazon-ecr)
       - [Amazon Elastic Container Service (Amazon ECS)](#amazon-elastic-container-service-amazon-ecs)
       - [Amazon Elastic Kubernetes Service (Amazon EKS)](#amazon-elastic-kubernetes-service-amazon-eks)
+    - [🛢️ Database](#️-database)
       - [Amazon Aurora](#amazon-aurora)
       - [Amazon Aurora Serverless](#amazon-aurora-serverless)
       - [Amazon DocumentDB (with MongoDB compatibility)](#amazon-documentdb-with-mongodb-compatibility)
@@ -488,7 +489,7 @@ Managed Kubernetes on AWS.
 
 > Amazon EKS is a managed service to run Kubernetes workloads in the AWS cloud or on-prem. It automates cluster provisioning, upgrades, and scalability while integrating tightly with other AWS services for networking, logging, and security.
 
-> ### 🛢️ Database
+### 🛢️ Database
 
 #### Amazon Aurora
 
