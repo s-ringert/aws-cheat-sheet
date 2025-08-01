@@ -176,7 +176,19 @@
     - [S3 Glacier Deep Archive](#s3-glacier-deep-archive)
     - [Summary Table](#summary-table)
   - [AWS Well-Architected Framework Pillars](#aws-well-architected-framework-pillars)
+    - [🧠 Operational Excellence](#-operational-excellence)
+    - [🔐 Security](#-security)
+    - [🔁 Reliability](#-reliability)
+    - [⚙️ Performance Efficiency](#️-performance-efficiency)
+    - [💰 Cost Optimization](#-cost-optimization)
+    - [🌱 6. Sustainability (added in 2021)](#-6-sustainability-added-in-2021)
   - [AWS Cloud Adoption Framework](#aws-cloud-adoption-framework)
+    - [🧩 Business Perspective](#-business-perspective)
+    - [🧑‍🤝‍🧑 People Perspective](#-people-perspective)
+    - [🏛️ Governance Perspective](#️-governance-perspective)
+    - [🧱 Platform Perspective](#-platform-perspective)
+    - [🔐 Security Perspective](#-security-perspective)
+    - [🔧 Operations Perspective](#-operations-perspective)
 
 ## Services
 
@@ -938,8 +950,6 @@ Language translation with neural networks.
 
 ### 🧩 App Integration
 
---------------------------------------------------------------------------------
-
 #### Amazon MQ
 
 Managed message broker (ActiveMQ, RabbitMQ).
@@ -1060,11 +1070,9 @@ Ingest and process video streams.
 
 - 1 Benutzer kann Support-Anfragen stellen
 
-Antwortzeit:
+- Antwortzeit < 24 Stunden bei allgemeinen Problemen
 
-> < 24 Stunden bei allgemeinen Problemen
-
-> < 12 Stunden bei Systemausfall
+- Antwortzeit < 12 Stunden bei Systemausfall
 
 ### 🟠 3\. Business Support
 
@@ -1076,11 +1084,9 @@ Antwortzeit:
 
 - Nutzung von AWS Personal Health Dashboard
 
-Antwortzeit:
+- Antwortzeit < 1 Stunde bei „Production System Down"
 
-> < 1 Stunde bei „Production System Down"
-
-> < 12–24 Stunden bei weniger kritischen Problemen
+- Antwortzeit < 12–24 Stunden bei weniger kritischen Problemen
 
 ### 🔴 4\. Enterprise Support
 
@@ -1090,9 +1096,7 @@ Antwortzeit:
 
 - Zugang zu Infrastructure Event Management (IEM) – z. B. bei großen Releases oder Migrationsprojekten
 
-Antwortzeit:
-
-> < 15 Minuten bei „Business-Critical System Down"
+- Antwortzeit < 15 Minuten bei „Business-Critical System Down"
 
 --------------------------------------------------------------------------------
 
@@ -1248,6 +1252,154 @@ S3 Glacier Deep Archive       | Very Rare        | 99.99%       | 11 nines   | C
 
 ## AWS Well-Architected Framework Pillars
 
+### 🧠 Operational Excellence
+
+Focus: Operations monitoring, automation, and improvement.
+
+- Perform operations as code
+
+- Make frequent, small, reversible changes
+
+- Anticipate failure and learn from it
+
+- Evolve procedures with experience
+
+### 🔐 Security
+
+Focus: Protecting data, systems, and assets.
+
+- Identity and access management (IAM)
+
+- Detective controls (e.g., CloudTrail, GuardDuty)
+
+- Infrastructure protection
+
+- Data protection (encryption, KMS, Secrets Manager)
+
+- Incident response
+
+### 🔁 Reliability
+
+Focus: System recovery and failure prevention.
+
+- Distributed system design
+
+- Recovery planning
+
+- Monitoring and failure detection
+
+- Auto scaling and self-healing
+
+### ⚙️ Performance Efficiency
+
+Focus: Optimal resource usage and architecture.
+
+- Serverless and managed services
+
+- Monitoring and autoscaling
+
+- Experimentation and evolutionary design
+
+- Global infrastructure usage
+
+### 💰 Cost Optimization
+
+Focus: Eliminating unnecessary costs.
+
+- Right-sizing resources
+
+- Using pricing models (e.g., Savings Plans, Spot)
+
+- Measuring and monitoring cost
+
+- Eliminating unused resources
+
+### 🌱 6\. Sustainability (added in 2021)
+
+Focus: Environmental impact of cloud workloads.
+
+- Optimizing resource use for energy efficiency
+
+- Selecting efficient architectures
+
+- Reducing downstream impacts (e.g., data transfer, hardware)
+
+- Measuring sustainability metrics
+
 --------------------------------------------------------------------------------
 
 ## AWS Cloud Adoption Framework
+
+### 🧩 Business Perspective
+
+Focus: Business goals and outcomes.
+
+Who's involved: Executives, finance, strategy leaders.
+
+- Business case development
+
+- Cloud value realization
+
+- Risk management
+
+- KPIs and success metrics
+
+### 🧑‍🤝‍🧑 People Perspective
+
+Focus: Organizational change management.
+
+Who's involved: HR, training, leadership.
+
+- Culture and change enablement
+
+- Skill development and training
+
+- Roles and responsibilities alignment
+
+### 🏛️ Governance Perspective
+
+Focus: Cloud governance, compliance, and controls.
+
+Who's involved: Risk, compliance, finance, and audit teams.
+
+- Policies and guardrails
+
+- Budgeting and cost control
+
+- Compliance and legal considerations
+
+### 🧱 Platform Perspective
+
+Focus: Technical architecture and infrastructure.
+
+Who's involved: Architects, engineers, ops.
+
+- Cloud architecture
+
+- Deployment automation (IaC)
+
+- Network and compute design
+
+### 🔐 Security Perspective
+
+Focus: Protection of data and systems.
+
+Who's involved: Security teams, compliance officers.
+
+- Identity and access management
+
+- Data protection and encryption
+
+- Threat detection and response
+
+### 🔧 Operations Perspective
+
+Focus: Monitoring and operations management.
+
+Who's involved: DevOps, operations, support.
+
+- Monitoring and observability
+
+- Incident management
+
+- Continuous improvement
